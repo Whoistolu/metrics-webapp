@@ -1,5 +1,10 @@
-import React from "react";
+/* eslint-disable */
 
-const Homepage = () => {
-  
-}
+const HomePage = () => {
+  const man = 'me';
+  return (
+    <p>Home Page</p>
+  );
+};
+
+export default HomePage;
