@@ -18,18 +18,6 @@
   height: 100%;
 }
 
-.navbar-container > button {
-  font-size: 1.5rem;
-  border: none;
-  height: 100%;
-  width: 55px;
-  padding: 0;
-  background-color: inherit;
-  color: white;
-  font-weight: bolder;
-  border-right: 2px solid white;
-}
-
 .main-container {
   position: absolute;
   z-index: -1;
@@ -52,6 +40,7 @@
   width: 50%;
   height: 175px;
   background-color: rgb(22, 115, 221);
+  cursor: pointer;
 }
 
 .container:nth-child(4n),
@@ -70,4 +59,18 @@
   text-align: center;
   font-size: 17px;
   color: #fff;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: rgb(22, 115, 221);
+}
+
+.europe {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -2.3rem;
+  margin-right: 1rem;
 }

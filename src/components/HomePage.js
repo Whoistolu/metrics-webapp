@@ -1,15 +1,19 @@
 /* eslint-disable */
 
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { BsFillBackspaceFill } from 'react-icons/bs';
 
 const HomePage = () => {
   const europeanCountries = useSelector(state => state.continentReducer)
-  // if (!europeanCountries) return <h1>loading</h1>
   return (
     <>
     <nav className="nav-bar">
       <div className="navbar-container"> 
-        <button>{'<'}</button>
+        <Link className="nav-button" to="/">
+          <BsFillBackspaceFill className="icon" />
+        </Link>
+        <h1 className="europe">{'EuropeanCountries'}</h1>
       </div>
     </nav>
     <div className="main-container">
