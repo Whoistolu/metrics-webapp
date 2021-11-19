@@ -13,7 +13,8 @@ const HomePage = () => {
         <Link className="nav-button" to="/">
           <BsFillBackspaceFill className="icon" />
         </Link>
-        <h1 className="europe">{'EuropeanCountries'}</h1>
+        <h1 className="europe">European Countries</h1>
+        <h2 className="europe-data">Covid'19 Data for</h2>
       </div>
     </nav>
     <div className="main-container">
