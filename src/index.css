@@ -54,6 +54,7 @@
   height: 175px;
   background-color: rgb(43, 132, 233);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container:nth-child(4n),
@@ -116,4 +117,25 @@
 .detail-container span {
   font-size: 22px;
   color: rgb(245, 245, 250);
+}
+
+.critical {
+  text-decoration: none;
+  color: white;
+}
+
+.Eu-setting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.setting-icon {
+  margin-left: 3rem;
+  width: 20%;
+}
+
+.microphone {
+  width: 60%;
 }

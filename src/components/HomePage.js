@@ -20,6 +20,7 @@ const HomePage = () => {
             filteredCountries.map((item) => (
               <Link key={item.id} to={`/country/${item.country}`} className="container">
                 <h2 className="name">{item.country}</h2>
+                <h2 className="critical">{item.critical}</h2>
                 <img src={item.countryFlag} alt="country flag" />
                 <h2>{item.id}</h2>
               </Link>

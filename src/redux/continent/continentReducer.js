@@ -14,6 +14,7 @@ export const getContinent = () => async (dispatch) => {
     population: item.population,
     countryFlag: flag,
     countryID: id,
+    critical: item.critical,
   }));
   dispatch({
     type: GET_CONTINENT,
