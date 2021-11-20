@@ -11,6 +11,6 @@ describe('test for Header', () => {
         wrapper: MemoryRouter,
       },
     );
-    expect(screen.getByText('Covid 19 Data for')).toBeInTheDocument();
+    expect(screen.getByText('European Countries')).toBeInTheDocument();
   });
 });
