@@ -5,6 +5,8 @@ A mobile web application that checks a list of metrics that is been created from
 ![screenshot](/img/detailpage.png)
 ![screenshot](/img/homepage.png)
 
+[Loom Video](https://www.loom.com/share/7f8e5f6ddad94736b58268f2b2afc709)
+
 ## Built With
 
 - HTML
