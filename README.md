@@ -2,8 +2,10 @@
 
 A mobile web application that checks a list of metrics that is been created from the data fetched from a covid 19 API for countries in Europe.
 
+![screenshot](/img/1.png)
+![screenshot](/img/1.png)
 ![screenshot](/img/detailpage.png)
-![screenshot](/img/homepage.png)
+
 
 [Loom Video](https://www.loom.com/share/7f8e5f6ddad94736b58268f2b2afc709)
 

@@ -34,6 +34,11 @@
   width: 100%;
 }
 
+.search {
+  padding: 0.5rem;
+  width: 100%;
+}
+
 .country-container {
   display: flex;
   flex-flow: row wrap;
@@ -81,6 +86,7 @@
   margin-right: 1rem;
   font-size: 20px;
   color: #fff;
+  margin-top: 0.3rem;
 }
 
 .europe-data {
