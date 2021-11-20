@@ -1,13 +1,113 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.3rem;
+  background-color: rgb(83, 115, 150);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-container input {
+  width: 33%;
+  margin-top: -1rem;
+}
+
+.main-container {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+}
+
+.country-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 175px;
+  background-color: rgb(43, 132, 233);
+  cursor: pointer;
+}
+
+.container:nth-child(4n),
+.container:nth-child(4n+1) {
+  background-color: rgb(49, 72, 97);
+}
+
+.container img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .name {
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: rgb(158, 194, 235);
+}
+
+.europe {
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+.europe-data {
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 72, 97);
+  height: 51rem;
+}
+
+.detail-container .name {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.detail-container span {
+  font-size: 22px;
+  color: rgb(245, 245, 250);
 }
