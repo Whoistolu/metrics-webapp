@@ -6,4 +6,9 @@ const fetchCovidData = async () => {
   return result;
 };
 
+export const fetchCovidDataByCountry = async (name) => {
+  const response = await fetch(`${baseUrl}/${name}`);
+  const result = await response.json();
+  return result;
+};
 export default fetchCovidData;

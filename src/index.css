@@ -10,12 +10,20 @@
   left: 0;
   width: 100%;
   height: 3.3rem;
-  background-color: red;
+  background-color: rgb(83, 115, 150);
 }
 
 .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
+}
+
+.navbar-container input {
+  width: 33%;
+  margin-top: -1rem;
 }
 
 .main-container {
@@ -39,13 +47,13 @@
   align-items: center;
   width: 50%;
   height: 175px;
-  background-color: rgb(22, 115, 221);
+  background-color: rgb(43, 132, 233);
   cursor: pointer;
 }
 
 .container:nth-child(4n),
 .container:nth-child(4n+1) {
-  background-color: rgb(7, 27, 51);
+  background-color: rgb(49, 72, 97);
 }
 
 .container img {
@@ -65,23 +73,41 @@
   font-size: 2rem;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
-  color: rgb(22, 115, 221);
+  color: rgb(158, 194, 235);
 }
 
 .europe {
-  display: flex;
   justify-content: flex-end;
-  margin-top: -1.5rem;
   margin-right: 1rem;
-  font-size: 22px;
+  font-size: 20px;
+  color: #fff;
 }
 
 .europe-data {
-  display: flex;
   justify-content: flex-end;
-  margin-top: -2.5rem;
   margin-right: 1rem;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 72, 97);
+  height: 51rem;
+}
+
+.detail-container .name {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.detail-container span {
+  font-size: 22px;
+  color: rgb(245, 245, 250);
 }

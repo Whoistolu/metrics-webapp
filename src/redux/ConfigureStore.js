@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import {
   createStore,
   combineReducers,
@@ -7,8 +5,7 @@ import {
 } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import continentReducer from './continent/continentReducer';
-import { getContinent } from './continent/continentReducer'
+import continentReducer, { getContinent } from './continent/continentReducer';
 
 const reducer = combineReducers({
   continentReducer,
@@ -18,6 +15,6 @@ const store = createStore(
 
   applyMiddleware(thunk, logger),
 );
-store.dispatch(getContinent()) 
+store.dispatch(getContinent());
 
 export default store;

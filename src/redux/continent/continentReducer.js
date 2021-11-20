@@ -1,6 +1,6 @@
 import fetchCovidData from '../Api';
 
-const GET_CONTINENT = 'GET_CONTINENT';
+export const GET_CONTINENT = 'metrics-webapp/continent/GET_CONTINENT';
 const initialState = [];
 
 export const getContinent = () => async (dispatch) => {
@@ -8,10 +8,10 @@ export const getContinent = () => async (dispatch) => {
   theContinent = theContinent.filter((item) => item.continent === 'Europe');
   const mappedData = theContinent.map(({ countryInfo: { _id: id, flag }, ...item }) => ({
     country: item.country,
-    description1: item.cases,
-    description2: item.active,
-    description3: item.tests,
-    description4: item.population,
+    cases: item.cases,
+    active: item.active,
+    test: item.tests,
+    population: item.population,
     countryFlag: flag,
     countryID: id,
   }));
